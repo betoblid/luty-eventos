@@ -1,7 +1,16 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { prisma } from "@/lib/prisma"
-import { formatDate } from "@/lib/utils"
-import Link from "next/link"
+import { Card, CardContent } from "@/components/ui/card";
+import { prisma } from "@/lib/prisma";
+import { formatDate } from "@/lib/utils";
+import Link from "next/link";
+
+interface newsletters {
+    id: string;
+    status: string;
+    sentAt: Date;
+    title: string;
+    content: string;
+    contentType: string;
+}
 
 async function getNewsletters() {
     const newsletters = await prisma.newsletter.findMany({
@@ -18,7 +27,7 @@ async function getNewsletters() {
 
 export default async function NewsletterArchivePage() {
 
-    const newsletters = await getNewsletters()
+    const newsletters: newsletters[] = await getNewsletters()
 
     return (
         <div className="container mx-auto px-4 py-16">
@@ -30,7 +39,7 @@ export default async function NewsletterArchivePage() {
                 </div>
             ) : (
                 <div className="space-y-4">
-                    {newsletters.map((newsletter) => (
+                    {newsletters.map((newsletter: newsletters) => (
                         <Link key={newsletter.id} href={`/admin/newsletter/view/${newsletter.id}`}>
                             <Card className="hover:shadow-md transition-shadow">
                                 <CardContent className="p-6">
