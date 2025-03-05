@@ -36,7 +36,11 @@ export async function GET(request: Request, { params }: { params: { token: strin
         confirmationToken: null,
       },
     })
-
+    interface Subscriber {
+      name: string;
+      id: string;
+      displayName: string;
+    }
     // Enviar e-mail de boas-vindas
     const unsubscribeUrl = `${getBaseUrl()}/newsletter/unsubscribe/${subscriber.unsubscribeToken}`
 
@@ -46,7 +50,7 @@ export async function GET(request: Request, { params }: { params: { token: strin
       subject: "Bem-vindo à Newsletter da Luty Eventos!",
       react: WelcomeEmailTemplate({
         name: subscriber.name,
-        preferences: subscriber.preferences.map((p) => p.displayName),
+        preferences: subscriber.preferences.map((p: Subscriber) => p.displayName),
         unsubscribeUrl,
       }),
     })
