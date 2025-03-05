@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Subscriber {
+  id                String                @id @default(cuid())
+  email             String                @unique
+  name              String
+  status            String                @default("pending") // pending, active, unsubscribed
+  confirmationToken String?               @unique
+  unsubscribeToken  String                @unique
+  createdAt         DateTime              @default(now())
+  updatedAt         DateTime              @updatedAt
+  preferences       Preference[]
+  newsletters       NewsletterRecipient[]
+}
+
+model Preference {
+  id          String       @id @default(cuid())
+  name        String       @unique
+  displayName String
+  subscribers Subscriber[]
+  newsletters Newsletter[]
+}
+
+model Newsletter {
+  id          String                @id @default(cuid())
+  title       String
+  content     String                @db.Text
+  contentType String                @default("text") // text, markdown
+  sentAt      DateTime              @default(now())
+  status      String                @default("draft") // draft, sent
+  preferences Preference[]
+  recipients  NewsletterRecipient[]
+}
+
+model NewsletterRecipient {
+  id           String     @id @default(cuid())
+  newsletter   Newsletter @relation(fields: [newsletterId], references: [id])
+  newsletterId String
+  subscriber   Subscriber @relation(fields: [subscriberId], references: [id])
+  subscriberId String
+  opened       Boolean    @default(false)
+  clicked      Boolean    @default(false)
+  sentAt       DateTime   @default(now())
+
+  @@unique([newsletterId, subscriberId])
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  password  String
+  role      String   @default("user") // user, admin
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Event {
+  id          String    @id @default(cuid())
+  title       String
+  description String    @db.Text
+  location    String?
+  startDate   DateTime
+  endDate     DateTime?
+  imageUrl    String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([title, startDate])
+}
