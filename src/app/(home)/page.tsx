@@ -19,9 +19,9 @@ export default function Home() {
             priority
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <div className="text-center text-white p-4 max-w-3xl">
+            <div className="text-center text-white p-4 max-w-7xl">
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                Seja bem-vindo à maior rede de fornecedores para eventos
+                Seja bem-vindo à maior rede de fornecedores para eventos em Salvador e na Grande Região Metropolitana.
               </h1>
               <p className="text-xl md:text-2xl mb-8">Seu evento começa aqui</p>
               <Link href="/orcamento">

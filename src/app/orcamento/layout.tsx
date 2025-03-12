@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Orçamentos Personalizados - Luty Eventos",
-    description: "Solicite orçamentos personalizados para o seu evento com a Luty Eventos. Conecte-se aos melhores fornecedores e faça seu evento acontecer.",
-    keywords: "orçamento para evento, orçamentos personalizados, fornecedores de eventos, planejamento de eventos, eventos Salvador, orçamentos rápidos",
+    title: "Orçamento - Espaço para Eventos, Decoração e Buffet em Salvador e Região Metropolitana",
+    description: "Encontre o espaço perfeito para seu evento em Salvador e Região Metropolitana com decoração personalizada, buffet completo e artigos exclusivos para festas e eventos. Realize seu evento de maneira única com Luty Eventos.",
+    keywords: "espaço para eventos, salão de festas, decoração de festa, decoradora de festa, espaço para festas, artigos de festa, decoração de festas, balões personalizados, buffet de festa, festa de decoração, tema de festas, espaço de eventos, confraternização empresa, locação de espaço para festas, buffet para festas, decoração personalizada Salvador",
     robots: "index, follow",
     authors: [{
         name: "Luty Eventos",
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
         url: ""
     }],
     openGraph: {
-        title: "Orçamentos Personalizados - Luty Eventos",
-        description: "Receba orçamentos personalizados e rápidos para o seu evento em Salvador. Trabalhamos com uma rede de fornecedores qualificados.",
+        title: "Orçamento - Espaço para Eventos, Decoração e Buffet em Salvador e Região Metropolitana",
+        description: "Encontre o espaço perfeito para seu evento em Salvador e Região Metropolitana com decoração personalizada, buffet completo e artigos exclusivos para festas e eventos. Realize seu evento de maneira única com Luty Eventos.",
         type: "website",
         url: "https://www.lutyeventos.com.br/orcamentos",
 
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         site: "@LutyEventos",
-        title: "Orçamentos Personalizados - Luty Eventos",
+        title: "Orçamento - Espaço para Eventos, Decoração e Buffet em Salvador e Região Metropolitana",
         description: "Solicite orçamentos rápidos e personalizados para o seu evento. A Luty Eventos conecta você aos melhores fornecedores.",
 
     }

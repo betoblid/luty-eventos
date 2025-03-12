@@ -30,7 +30,7 @@ export default function Header() {
                     </div>
 
                     <div className="hidden md:flex items-center space-x-2">
-                        <div className="text-right">
+                        {/* <div className="text-right">
                             <p className="text-sm text-gray-600">Acompanhe-nos:</p>
                             <div className="flex space-x-2">
                                 <Link href="#" className="text-primary hover:text-red-600">
@@ -66,10 +66,10 @@ export default function Header() {
                                     </svg>
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="ml-4 px-4 py-2 bg-gray-900 text-white rounded-md">
-                            <a href="tel:71 9618-5243" target="_blank" className="text-sm font-semibold">(71) 9618-5243</a>
+                            <a href="tel:71 9618-5243" target="_blank" className="text-sm font-semibold" title="Contato Comercial">(71) 9618-5243</a>
                         </div>
                     </div>
                 </div>
