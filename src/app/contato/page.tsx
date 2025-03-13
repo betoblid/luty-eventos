@@ -101,9 +101,9 @@ export default function ContatoPage() {
                                     <div>
                                         <h3 className="font-semibold text-gray-900 mb-1">Endereço:</h3>
                                         <p className="text-gray-700">
-                                            Rua dos Eventos, nº 123, Edifício Centro Empresarial, Sala 101
+                                        Est do Côco, 2774 
                                             <br />
-                                            Salvador/BA - CEP 40.000-000
+                                            Salvador/BA - CEP 42.700-000
                                         </p>
                                     </div>
                                 </div>
@@ -117,6 +117,11 @@ export default function ContatoPage() {
                                         <p className="text-gray-700">
                                             <a href="tel:+557196185243" className="hover:text-red-600 transition-colors">
                                                 (71) 9618-5243
+                                            </a>
+                                        </p>
+                                        <p className="text-gray-700">
+                                            <a href="https://wa.me/11949208086" className="hover:text-red-600 transition-colors">
+                                                (11) 94920-8086
                                             </a>
                                         </p>
                                     </div>

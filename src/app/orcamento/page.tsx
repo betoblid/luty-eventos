@@ -31,7 +31,6 @@ type FormValues = z.infer<typeof formSchema>
 export default function OrcamentoPage() {
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [selectedServices, setSelectedServices] = useState<string[]>([])
-    const [expandedCategory, setExpandedCategory] = useState<string | null>(null)
 
     const form = useForm<FormValues>({
         resolver: zodResolver(formSchema),

@@ -31,54 +31,27 @@ export default function Footer() {
                         <FooterSubscribeForm />
                     </div>
 
-                    <div className="space-y-4">
+                    <div className="space-y-4 text-sm">
                         <h3 className="text-lg font-semibold">Nossos Contatos</h3>
                         <div className="space-y-2">
-                            <a href="tel:71 9618-5243" target="_blank" className="flex items-center">
+                            <a href="tel:7196185243" target="_blank" className="flex items-center">
                                 <span className="font-semibold mr-2">Tel:</span> (71) 9618-5243
                             </a>
-                            <p className="text-sm">
-                                atendimento@lutyeventos.com.br
+                            <a href="tel:11949208086" target="_blank" className="flex items-center">
+                                <span className="font-semibold mr-2">Tel:</span> (11) 94920-8086
+                            </a>
+                            <p>
+                                <a href="mailto:atendimento@lutyeventos.com.br">atendimento@lutyeventos.com.br</a>
                                 <br />
-                                comercial@lutyeventos.com.br
+                                <a href="mailto:comercial@lutyeventos.com.br">comercial@lutyeventos.com.br</a>
                             </p>
-                            <a href="https://api.whatsapp.com/send/?phone=7196185243" target="_blank" className="flex items-center">
+                            <a href="https://wa.me/7196185243" target="_blank" className="flex items-center">
                                 <span className="font-semibold mr-2">WhatsApp:</span> (71) 9618-5243
                             </a>
-                            <div className="flex space-x-2 mt-2">
-                                <Link href="#" className="text-white hover:text-gray-300">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        className="w-5 h-5"
-                                    >
-                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                    </svg>
-                                </Link>
-                                <Link href="#" className="text-white hover:text-gray-300">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        className="w-5 h-5"
-                                    >
-                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                                    </svg>
-                                </Link>
-                            </div>
+                            <a href="https://wa.me/11949208086" target="_blank" className="flex items-center">
+                                <span className="font-semibold mr-2">WhatsApp:</span> (11) 94920-8086
+                            </a>
+                            
                         </div>
                     </div>
 
@@ -106,7 +79,7 @@ export default function Footer() {
                 <div className="mt-8 pt-8 border-t  text-xs">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                            <p>LUTY MARKETING E PROMOÇÕES LTDA - ME</p>
+                            <p>LUTY EVENTOS E PROMOÇÕES LTDA - ME</p>
                             <p>Est do Côco, 2774 - Centro - BA | CEP 42.700-000</p>
                         </div>
                         <div className="md:text-right">
