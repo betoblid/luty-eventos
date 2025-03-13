@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Decoração, Buffet e Espaço para Eventos em Salvador e Região Metropolitana | Luty Eventos",
-    description: "Oferecemos soluções completas para seu evento: decoração personalizada, buffet de alta qualidade e espaços para eventos em Salvador. De corporativo a confraternizações, fazemos sua festa inesquecível!",
-    keywords: "salão de festas, decoração de festa, espaço para eventos, decoradora de festa, buffet de festa, serviço de buffet, decoração de aniversários, tendas para eventos, iluminação para festas, dj para festas, decoração de festividade, decoração temática, buffet para festa, evento em Salvador, festas e eventos, decoração para eventos, espaços para eventos",
+    title: "Organização, Produção e Gestão de Eventos Empresariais - Luty Eventos",
+    description: "Oferecemos serviços completos de organização e produção de eventos em Salvador e Região Metropolitana. Desde confraternizações empresariais até grandes eventos corporativos, garantimos a melhor gestão e planejamento para seu evento ser um sucesso.",
+    keywords: "empresa de eventos, organização de eventos, agência de eventos, produção de eventos, confraternização empresa, eventos empresariais, eventos Bahia, empresa de eventos em Salvador, planejamento de eventos, orçamento de eventos, eventos corporativos, eventos de marketing, sala para eventos, realizar eventos, gestão de eventos, produtora de eventos",
     robots: "index, follow",
     authors: [{
         name: "Luty Eventos herbert souza",
@@ -12,10 +12,10 @@ export const metadata: Metadata = {
         name: "Herbert souza",
     }],
     openGraph: {
-        title: "Decoração, Buffet e Espaço para Eventos em Salvador e Região Metropolitana | Luty Eventos",
+        title: "Organização, Produção e Gestão de Eventos Empresariais - Luty Eventos",
         description: "Oferecemos serviços completos de organização e produção de eventos em Salvador e Região Metropolitana. Desde confraternizações empresariais até grandes eventos corporativos, garantimos a melhor gestão e planejamento para seu evento ser um sucesso.",
         type: "website",
-        url: "https://www.lutyeventos.com.br/servicos",
+        url: "https://www.lutyeventos.com.br/sobre",
     },
     twitter: {
         card: "summary_large_image",

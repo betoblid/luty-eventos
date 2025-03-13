@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Contato - Luty Eventos",
-    description: "Entre em contato com a Luty Eventos para mais informações sobre como podemos ajudá-lo a organizar seu evento em Salvador e Grande Bahia.",
-    keywords: "contato Luty Eventos, eventos em Salvador, contato para orçamentos, evento Salvador, contato empresa de eventos",
+    title: "Fale Conosco para Planejar Seu Evento em Salvador e Região Metropolitana - Luty Eventos",
+    description: "Entre em contato com a Luty Eventos para planejar seu evento perfeito em Salvador e Região Metropolitana. Oferecemos espaços exclusivos, decoração personalizada e buffet de qualidade para todos os tipos de festas e confraternizações.",
+    keywords: "entrar em contato, contato Luty Eventos, fale conosco, planejar evento em Salvador, espaços para eventos, decoração personalizada, buffet para festas, festa de casamento, evento corporativo, confraternização empresa, orçar evento, agendar evento Salvador",
     robots: "index, follow",
     authors: [{
         name: "Luty Eventos",
@@ -11,11 +11,10 @@ export const metadata: Metadata = {
     },
     {
         name: "Herbert souza",
-        url: ""
     }],
     openGraph: {
-        title: "Contato - Luty Eventos",
-        description: "Entre em contato conosco para esclarecer dúvidas ou solicitar um orçamento para o seu evento em Salvador.",
+        title: "Fale Conosco para Planejar Seu Evento em Salvador e Região Metropolitana - Luty Eventos",
+        description: "Entre em contato com a Luty Eventos para planejar seu evento perfeito em Salvador e Região Metropolitana. Oferecemos espaços exclusivos, decoração personalizada e buffet de qualidade para todos os tipos de festas e confraternizações.",
         type: "website",
         url: "https://www.lutyeventos.com.br/contato",
     },
@@ -23,8 +22,8 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         site: "@LutyEventos",
-        title: "Contato - Luty Eventos",
-        description: "Fale conosco para planejar o evento perfeito em Salvador e Grande Bahia.",
+        title: "Fale Conosco para Planejar Seu Evento em Salvador e Região Metropolitana - Luty Eventos",
+        description: "Entre em contato com a Luty Eventos para planejar seu evento perfeito em Salvador e Região Metropolitana. Oferecemos espaços exclusivos, decoração personalizada e buffet de qualidade para todos os tipos de festas e confraternizações.",
 
     }
 };

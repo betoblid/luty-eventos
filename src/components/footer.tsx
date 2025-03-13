@@ -97,7 +97,7 @@ export default function Footer() {
                             </div>
                             <div className="mt-4">
                                 <Image src={Logo} alt="Luty Eventos" width={150} height={60} />
-                                <p className="text-xs mt-2">Copyright © Luty Eventos - Todos os direitos reservados.</p>
+                                <p className="text-xs mt-2">Copyright 2025 © Luty Eventos - Todos os direitos reservados.</p>
                             </div>
                         </div>
                     </div>
@@ -106,8 +106,8 @@ export default function Footer() {
                 <div className="mt-8 pt-8 border-t  text-xs">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
-                            <p>LUTY MARKETING E PROMOÇÕES LTDA - ME | CNPJ 12.345.678/0001-00</p>
-                            <p>Rua dos Eventos, nº 123, Edifício Centro Empresarial, Sala 101, Salvador/BA | CEP 40.000-000</p>
+                            <p>LUTY MARKETING E PROMOÇÕES LTDA - ME</p>
+                            <p>Est do Côco, 2774 - Centro - BA | CEP 42.700-000</p>
                         </div>
                         <div className="md:text-right">
                             <p>HORÁRIO DE FUNCIONAMENTO:</p>

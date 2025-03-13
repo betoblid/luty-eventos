@@ -1,35 +1,5 @@
-import { Metadata } from "next";
+
 import Image from "next/image";
-
-
-export const metadata: Metadata = {
-    title: "Quem Somos - Luty Eventos",
-    description: "A Luty Eventos é uma empresa especializada na criação e organização de eventos em Salvador e Grande Bahia. Conheça nossa missão e valores.",
-    keywords: "quem somos, Luty Eventos, organização de eventos, empresa de eventos, Salvador, Grande Bahia, eventos personalizados",
-    robots: "index, follow",
-    authors: [{
-        name: "Luty Eventos",
-        url: "@LutyEventos",
-    },
-    {
-        name: "Herbert souza",
-        url: ""
-    }],
-    openGraph: {
-        title: "Quem Somos - Luty Eventos",
-        description: "Saiba mais sobre a Luty Eventos, nossa história e como podemos ajudar você a organizar o evento dos seus sonhos em Salvador.",
-        type: "website",
-        url: "https://www.lutyeventos.com.br/quemsomos",
-
-    },
-    twitter: {
-        card: "summary_large_image",
-        site: "@LutyEventos",
-        title: "Quem Somos - Luty Eventos",
-        description: "Conheça a Luty Eventos e descubra como podemos ajudar a organizar seu evento de forma simples e eficiente.",
-
-    }
-};
 
 
 export default function SobrePage() {
