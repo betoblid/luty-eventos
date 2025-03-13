@@ -28,7 +28,7 @@ export async function POST(request: Request) {
 
     // Enviar e-mail de confirmação para o cliente
     await resend.emails.send({
-      from: "Luty Eventos <contato@lutyeventos.com.br>",
+      from: `Luty Eventos <onboarding@resend.dev>`,
       to: [email],
       subject: "Recebemos sua mensagem - Luty Eventos",
       react: ContactEmailTemplate({
